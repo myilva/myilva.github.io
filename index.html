@@ -1,0 +1,1104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>学校要求光着表演_校园艺术实践_本色表达与真实成长</title>
+<meta name="description" content="学校要求光着表演，一个聚焦校园艺术实践与真实表达的视频品牌，记录学生在镜头前卸下包装、回归本色的成长瞬间。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#141414;
+  --paper:#f4f1ea;
+  --warm:#e8dcc8;
+  --accent:#c8452b;
+  --accent2:#2b6c8c;
+  --gold:#c9a24a;
+  --gray:#7a756c;
+  --line:rgba(20,20,20,.12);
+  --shadow:0 18px 50px rgba(20,20,20,.14);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Songti SC","Noto Serif SC",Georgia,"STSong",serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  overflow-x:hidden;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+.sans{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:fixed;top:0;left:0;right:0;z-index:80;
+  background:rgba(244,241,234,.82);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+  transition:transform .35s ease;
+}
+.topbar.hide{transform:translateY(-100%)}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.06em}
+.logo-mark{
+  width:38px;height:38px;border-radius:10px;
+  background:linear-gradient(135deg,var(--accent),var(--gold));
+  display:grid;place-items:center;color:#fff;font-size:18px;font-weight:800;
+  box-shadow:0 6px 18px rgba(200,69,43,.35);
+}
+.logo-txt{font-size:17px;letter-spacing:.14em}
+.logo-sub{font-size:10px;letter-spacing:.34em;color:var(--gray);margin-top:2px}
+.nav{display:flex;gap:34px;font-size:14px;letter-spacing:.1em}
+.nav a{position:relative;padding:6px 0;color:#3a3630;transition:color .2s}
+.nav a::after{
+  content:"";position:absolute;left:0;bottom:0;height:2px;width:0;
+  background:var(--accent);transition:width .3s ease;
+}
+.nav a:hover{color:var(--accent)}
+.nav a:hover::after{width:100%}
+.top-cta{
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:13px;letter-spacing:.08em;padding:11px 22px;
+  background:var(--ink);color:var(--paper);border-radius:100px;
+  transition:.25s;border:1px solid var(--ink);
+}
+.top-cta:hover{background:transparent;color:var(--ink)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.burger span{width:24px;height:2px;background:var(--ink);transition:.3s}
+
+/* ---------- hero ---------- */
+.hero{
+  padding:150px 0 90px;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;right:-180px;top:60px;width:520px;height:520px;
+  border-radius:50%;background:radial-gradient(circle,rgba(200,69,43,.14),transparent 68%);
+  z-index:0;
+}
+.hero::after{
+  content:"";position:absolute;left:-140px;bottom:-120px;width:420px;height:420px;
+  border-radius:50%;background:radial-gradient(circle,rgba(43,108,140,.13),transparent 68%);
+  z-index:0;
+}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:12px;letter-spacing:.32em;color:var(--accent);
+  padding:8px 16px;border:1px solid rgba(200,69,43,.35);border-radius:100px;
+  margin-bottom:28px;background:rgba(200,69,43,.05);
+}
+.kicker i{width:6px;height:6px;border-radius:50%;background:var(--accent);display:block;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(200,69,43,.5)}50%{opacity:.6;box-shadow:0 0 0 7px rgba(200,69,43,0)}}
+h1{
+  font-size:clamp(46px,7.2vw,96px);
+  line-height:1.02;letter-spacing:-.02em;font-weight:800;
+  margin-bottom:12px;
+}
+h1 em{
+  font-style:normal;display:block;color:var(--accent);
+  -webkit-text-stroke:0;
+  position:relative;
+}
+h1 .strike{
+  position:relative;display:inline-block;
+}
+h1 .strike::after{
+  content:"";position:absolute;left:-4%;right:-4%;top:56%;height:5px;
+  background:var(--gold);transform:rotate(-1.4deg);opacity:.75;
+}
+.hero-lead{
+  margin-top:30px;font-size:17px;line-height:2;color:#46413a;max-width:520px;
+}
+.hero-lead strong{color:var(--accent);font-weight:600}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.hero-tags span{
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:12.5px;letter-spacing:.06em;color:#57524a;
+  border:1px solid var(--line);border-radius:100px;padding:7px 15px;
+  background:rgba(255,255,255,.5);
+}
+.hero-actions{display:flex;gap:16px;margin-top:38px;flex-wrap:wrap}
+.btn{
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:14px;letter-spacing:.1em;padding:15px 34px;border-radius:100px;
+  transition:.28s;display:inline-flex;align-items:center;gap:10px;cursor:pointer;
+}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 14px 32px rgba(200,69,43,.3)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(200,69,43,.4)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+
+/* hero visual */
+.hero-visual{position:relative}
+.screen{
+  position:relative;border-radius:22px;overflow:hidden;
+  background:#191919;box-shadow:var(--shadow);
+  border:1px solid rgba(0,0,0,.1);
+}
+.screen svg{width:100%;height:auto;display:block}
+.screen-bar{
+  position:absolute;top:0;left:0;right:0;height:34px;
+  background:rgba(0,0,0,.55);display:flex;align-items:center;gap:6px;padding:0 14px;
+}
+.screen-bar i{width:9px;height:9px;border-radius:50%;display:block;background:#555}
+.screen-bar i:nth-child(1){background:#e35b4b}
+.screen-bar i:nth-child(2){background:#d9a441}
+.screen-bar i:nth-child(3){background:#4c9c6b}
+.play{
+  position:absolute;inset:0;display:grid;place-items:center;cursor:pointer;
+}
+.play-btn{
+  width:72px;height:72px;border-radius:50%;background:rgba(244,241,234,.9);
+  display:grid;place-items:center;transition:.3s;
+  box-shadow:0 0 0 0 rgba(244,241,234,.5);
+}
+.play:hover .play-btn{transform:scale(1.1);box-shadow:0 0 0 14px rgba(244,241,234,.15)}
+.play-btn svg{width:26px;height:26px;fill:var(--accent);margin-left:4px}
+.float-card{
+  position:absolute;background:var(--paper);border:1px solid var(--line);
+  border-radius:14px;padding:14px 18px;box-shadow:0 16px 38px rgba(20,20,20,.14);
+}
+.fc1{left:-28px;bottom:38px;animation:floaty 5s ease-in-out infinite}
+.fc2{right:-24px;top:64px;animation:floaty 6.5s ease-in-out infinite reverse}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.fc-num{font-size:26px;font-weight:800;color:var(--accent);line-height:1;letter-spacing:-.02em}
+.fc-txt{font-size:11px;letter-spacing:.2em;color:var(--gray);margin-top:6px;font-family:"PingFang SC",sans-serif}
+
+/* ticker */
+.ticker{
+  background:var(--ink);color:var(--paper);padding:16px 0;overflow:hidden;
+  border-top:1px solid #333;border-bottom:1px solid #333;
+}
+.ticker-track{
+  display:flex;gap:56px;white-space:nowrap;animation:tick 34s linear infinite;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:13px;letter-spacing:.24em;
+}
+.ticker-track span{opacity:.72;display:flex;align-items:center;gap:14px}
+.ticker-track span::before{content:"◆";color:var(--gold);font-size:9px;opacity:.9}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- section base ---------- */
+section{padding:96px 0;position:relative}
+.sec-head{margin-bottom:56px;max-width:760px}
+.sec-label{
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:12px;letter-spacing:.34em;color:var(--accent);
+  display:flex;align-items:center;gap:14px;margin-bottom:18px;
+}
+.sec-label::before{content:"";width:34px;height:1px;background:var(--accent)}
+.sec-title{font-size:clamp(30px,4.2vw,50px);line-height:1.24;font-weight:800;letter-spacing:-.01em}
+.sec-desc{margin-top:20px;font-size:16px;color:#4f4a43;line-height:1.95}
+
+/* ---------- intro / about ---------- */
+.about{background:linear-gradient(180deg,var(--paper),#efe9dd)}
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:64px;align-items:center}
+.about-art{
+  border-radius:20px;overflow:hidden;box-shadow:var(--shadow);
+  border:1px solid var(--line);background:#e4dbc9;
+}
+.about-copy p{font-size:16px;line-height:2.05;color:#453f38;margin-bottom:20px}
+.about-copy p strong{color:var(--accent);font-weight:600}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.stat{
+  background:rgba(255,255,255,.62);border:1px solid var(--line);
+  border-radius:14px;padding:22px 18px;transition:.3s;
+}
+.stat:hover{transform:translateY(-4px);border-color:rgba(200,69,43,.4);box-shadow:0 14px 32px rgba(20,20,20,.08)}
+.stat b{display:block;font-size:30px;letter-spacing:-.02em;color:var(--ink);line-height:1.1}
+.stat b i{font-style:normal;font-size:15px;color:var(--accent);margin-left:3px}
+.stat small{font-family:"PingFang SC",sans-serif;font-size:11.5px;letter-spacing:.14em;color:var(--gray);display:block;margin-top:8px}
+
+/* ---------- principles value cards ---------- */
+.values{background:var(--ink);color:var(--paper)}
+.values .sec-label{color:var(--gold)}
+.values .sec-label::before{background:var(--gold)}
+.values .sec-desc{color:#b5afa4}
+.val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.val-card{
+  border:1px solid #333;border-radius:18px;padding:34px 30px;
+  background:linear-gradient(160deg,#1c1c1c,#141414);transition:.35s;position:relative;overflow:hidden;
+}
+.val-card::before{
+  content:"";position:absolute;top:0;left:0;width:100%;height:3px;
+  background:linear-gradient(90deg,var(--accent),var(--gold));
+  transform:scaleX(0);transform-origin:left;transition:transform .4s;
+}
+.val-card:hover{transform:translateY(-8px);border-color:#454545}
+.val-card:hover::before{transform:scaleX(1)}
+.val-idx{
+  font-family:"PingFang SC",sans-serif;font-size:12px;letter-spacing:.3em;color:var(--gold);
+  margin-bottom:22px;display:block;
+}
+.val-icon{
+  width:52px;height:52px;border-radius:14px;background:rgba(201,162,74,.14);
+  display:grid;place-items:center;margin-bottom:22px;
+}
+.val-icon svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.6}
+.val-card h3{font-size:21px;font-weight:700;margin-bottom:14px;letter-spacing:.02em}
+.val-card p{font-size:14.5px;line-height:1.95;color:#a8a296}
+
+/* ---------- works / shows ---------- */
+.works{background:var(--paper)}
+.filter-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:38px}
+.chip{
+  font-family:"PingFang SC",sans-serif;font-size:13px;letter-spacing:.08em;
+  padding:9px 20px;border-radius:100px;border:1px solid var(--line);
+  color:#57524a;cursor:pointer;transition:.25s;background:transparent;
+}
+.chip:hover{border-color:var(--ink)}
+.chip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.work{
+  border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line);
+  transition:.4s;box-shadow:0 6px 18px rgba(20,20,20,.04);display:flex;flex-direction:column;
+}
+.work:hover{transform:translateY(-8px);box-shadow:0 26px 54px rgba(20,20,20,.14)}
+.work-thumb{position:relative;overflow:hidden;background:#ddd6c8}
+.work-thumb svg{width:100%;height:auto;transition:transform .55s ease}
+.work:hover .work-thumb svg{transform:scale(1.05)}
+.work-dur{
+  position:absolute;right:12px;bottom:12px;font-family:"PingFang SC",sans-serif;
+  font-size:11px;letter-spacing:.06em;background:rgba(20,20,20,.78);color:#fff;
+  padding:4px 10px;border-radius:6px;
+}
+.work-body{padding:24px 24px 26px;flex:1;display:flex;flex-direction:column}
+.work-meta{font-family:"PingFang SC",sans-serif;font-size:11px;letter-spacing:.2em;color:var(--accent);margin-bottom:10px}
+.work-body h3{font-size:19px;line-height:1.45;font-weight:700;margin-bottom:10px}
+.work-body p{font-size:14px;line-height:1.9;color:#6b655c;flex:1}
+.work-foot{
+  margin-top:18px;padding-top:16px;border-top:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;
+  font-family:"PingFang SC",sans-serif;font-size:12px;letter-spacing:.08em;color:var(--gray);
+}
+.work-foot .ar{color:var(--accent);transition:transform .3s}
+.work:hover .work-foot .ar{transform:translateX(5px)}
+
+/* ---------- quote strip ---------- */
+.quote-strip{
+  background:linear-gradient(120deg,#e8dcc8,#dfd2ba);padding:80px 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.quote-in{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+.quote-mark{font-size:110px;line-height:.8;color:var(--accent);opacity:.35;font-family:Georgia,serif}
+.quote-txt{font-size:clamp(20px,2.6vw,30px);line-height:1.7;font-weight:600;letter-spacing:.01em}
+.quote-by{margin-top:18px;font-family:"PingFang SC",sans-serif;font-size:13px;letter-spacing:.18em;color:#6d675d}
+
+/* ---------- process / how ---------- */
+.process{background:var(--paper)}
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.proc-item{
+  padding:38px 28px 34px 0;border-right:1px solid var(--line);position:relative;
+  transition:.3s;
+}
+.proc-item:last-child{border-right:none}
+.proc-item:hover{background:rgba(255,255,255,.5)}
+.proc-num{
+  font-size:13px;font-family:"PingFang SC",sans-serif;letter-spacing:.24em;color:var(--accent);
+  margin-bottom:22px;
+}
+.proc-item h3{font-size:19px;margin-bottom:12px;font-weight:700}
+.proc-item p{font-size:14px;line-height:1.92;color:#655f56}
+
+/* ---------- voices ---------- */
+.voices{background:#efe9dd}
+.voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.voice{
+  background:var(--paper);border:1px solid var(--line);border-radius:18px;
+  padding:30px 28px;transition:.35s;display:flex;flex-direction:column;
+}
+.voice:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(20,20,20,.1)}
+.voice-rate{color:var(--gold);letter-spacing:.2em;font-size:13px;margin-bottom:16px}
+.voice p{font-size:15px;line-height:2;color:#46413a;flex:1}
+.voice-who{display:flex;align-items:center;gap:13px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.avatar{
+  width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+  font-family:"PingFang SC",sans-serif;font-size:14px;font-weight:700;color:#fff;flex-shrink:0;
+}
+.voice-who b{display:block;font-size:14px;font-weight:600;letter-spacing:.03em}
+.voice-who small{font-family:"PingFang SC",sans-serif;font-size:11.5px;letter-spacing:.1em;color:var(--gray)}
+
+/* ---------- faq ---------- */
+.faq{background:var(--paper)}
+.faq-list{max-width:860px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{
+  width:100%;background:none;border:none;cursor:pointer;text-align:left;
+  padding:26px 0;display:flex;align-items:center;justify-content:space-between;gap:24px;
+  font-size:17.5px;font-weight:600;color:var(--ink);font-family:inherit;transition:color .2s;
+}
+.faq-q:hover{color:var(--accent)}
+.faq-ico{
+  width:28px;height:28px;border-radius:50%;border:1px solid var(--line);
+  display:grid;place-items:center;flex-shrink:0;transition:.3s;position:relative;
+}
+.faq-ico::before,.faq-ico::after{
+  content:"";position:absolute;background:var(--ink);transition:.3s;
+}
+.faq-ico::before{width:11px;height:1.5px}
+.faq-ico::after{width:1.5px;height:11px}
+.faq-item.open .faq-ico{background:var(--accent);border-color:var(--accent);transform:rotate(90deg)}
+.faq-item.open .faq-ico::before,.faq-item.open .faq-ico::after{background:#fff}
+.faq-item.open .faq-ico::after{opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
+.faq-a p{padding:0 0 26px;font-size:15px;line-height:2;color:#5b554c;max-width:720px}
+
+/* ---------- cta ---------- */
+.cta{
+  background:var(--ink);color:var(--paper);padding:110px 0;position:relative;overflow:hidden;
+}
+.cta::before{
+  content:"";position:absolute;left:50%;top:-60%;transform:translateX(-50%);
+  width:800px;height:800px;border-radius:50%;
+  background:radial-gradient(circle,rgba(200,69,43,.22),transparent 62%);
+}
+.cta-in{position:relative;z-index:2;text-align:center;max-width:720px;margin:0 auto}
+.cta h2{font-size:clamp(32px,4.6vw,56px);line-height:1.22;font-weight:800;margin-bottom:22px;letter-spacing:-.01em}
+.cta p{font-size:16px;line-height:2;color:#b6b0a5;margin-bottom:40px}
+.cta-form{display:flex;gap:12px;max-width:520px;margin:0 auto;flex-wrap:wrap}
+.cta-form input{
+  flex:1;min-width:220px;background:rgba(255,255,255,.06);border:1px solid #3a3a3a;
+  border-radius:100px;padding:16px 26px;color:var(--paper);font-size:14px;
+  font-family:"PingFang SC",sans-serif;outline:none;transition:.25s;
+}
+.cta-form input::placeholder{color:#77716a}
+.cta-form input:focus{border-color:var(--gold);background:rgba(255,255,255,.1)}
+.cta-form button{
+  font-family:"PingFang SC",sans-serif;font-size:14px;letter-spacing:.1em;
+  padding:16px 34px;border-radius:100px;border:none;cursor:pointer;
+  background:var(--accent);color:#fff;transition:.28s;
+}
+.cta-form button:hover{background:#e0532f;transform:translateY(-2px)}
+.cta-msg{height:22px;margin-top:16px;font-family:"PingFang SC",sans-serif;font-size:13px;letter-spacing:.06em;color:var(--gold);opacity:0;transition:opacity .3s}
+.cta-msg.show{opacity:1}
+
+/* ---------- footer ---------- */
+footer{background:#0d0d0d;color:#8f897e;padding:70px 0 34px;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:44px}
+.foot-brand .logo-txt{color:var(--paper);margin-bottom:16px;display:block}
+.foot-brand p{font-size:13.5px;line-height:1.95;max-width:280px;color:#7c766c}
+.foot-col h4{color:var(--paper);font-size:13px;letter-spacing:.18em;margin-bottom:18px;font-weight:600}
+.foot-col a{display:block;font-size:13.5px;padding:6px 0;color:#8f897e;transition:.2s}
+.foot-col a:hover{color:var(--gold)}
+.foot-bottom{
+  margin-top:52px;padding-top:26px;border-top:1px solid #232323;
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+  font-size:12px;letter-spacing:.08em;color:#5f5a52;flex-wrap:wrap;
+}
+.foot-bottom .socials{display:flex;gap:14px}
+.foot-bottom .socials span{
+  width:32px;height:32px;border-radius:50%;border:1px solid #2e2e2e;
+  display:grid;place-items:center;font-size:11px;color:#8f897e;cursor:pointer;transition:.25s;
+}
+.foot-bottom .socials span:hover{border-color:var(--gold);color:var(--gold)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .hero-visual{max-width:560px}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .val-grid{grid-template-columns:repeat(2,1fr)}
+  .works-grid{grid-template-columns:repeat(2,1fr)}
+  .voice-grid{grid-template-columns:repeat(2,1fr)}
+  .proc-grid{grid-template-columns:repeat(2,1fr)}
+  .proc-item{border-bottom:1px solid var(--line)}
+  .proc-item:nth-child(2n){border-right:none}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  .nav{display:none}
+  .top-cta{display:none}
+  .burger{display:flex}
+  .nav.open{
+    display:flex;position:fixed;top:70px;left:0;right:0;background:var(--paper);
+    flex-direction:column;padding:26px 6vw 34px;gap:20px;border-bottom:1px solid var(--line);
+    box-shadow:0 18px 40px rgba(20,20,20,.12);
+  }
+  section{padding:70px 0}
+  .hero{padding:120px 0 70px}
+  .val-grid,.works-grid,.voice-grid{grid-template-columns:1fr}
+  .proc-grid{grid-template-columns:1fr}
+  .proc-item{border-right:none}
+  .about-stats{grid-template-columns:1fr}
+  .float-card{display:none}
+  .quote-in{grid-template-columns:1fr;gap:10px}
+  .quote-mark{font-size:70px}
+  .foot-grid{grid-template-columns:1fr}
+  .cta-form{flex-direction:column}
+  .cta-form input,.cta-form button{width:100%}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- top bar -->
+<header class="topbar" id="topbar">
+  <div class="wrap topbar-in">
+    <a href="#" class="logo">
+      <span class="logo-mark">素</span>
+      <span>
+        <span class="logo-txt">本色影像</span>
+        <span class="logo-sub">TRUE&nbsp;FORM&nbsp;FILM</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#about">关于</a>
+      <a href="#values">理念</a>
+      <a href="#works">作品</a>
+      <a href="#process">合作</a>
+      <a href="#voices">口碑</a>
+      <a href="#faq">问答</a>
+    </nav>
+    <a href="#cta" class="top-cta">预约拍摄</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- hero -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker"><i></i>校园艺术实践影像品牌</div>
+      <h1>学校要求<br><em class="strike">光着表演</em></h1>
+      <p class="hero-lead">
+        我们不拍包装，只记录<strong>卸下伪装之后</strong>的那一瞬间。
+        当“学校要求光着表演”成为一种真实的艺术命题，我们走进教室、排练厅与后台，
+        用镜头见证少年们如何在本色里找到底气。
+      </p>
+      <div class="hero-tags">
+        <span>真实记录</span>
+        <span>校园艺术</span>
+        <span>幕后直击</span>
+        <span>成长叙事</span>
+        <span>本色表达</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#works" class="btn btn-primary">观看作品集 →</a>
+        <a href="#about" class="btn btn-ghost">了解品牌</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="screen">
+        <div class="screen-bar"><i></i><i></i><i></i></div>
+        <svg viewBox="0 0 560 400" role="img" aria-label="排练厅光影示意">
+          <defs>
+            <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#2a2622"/>
+              <stop offset="100%" stop-color="#151312"/>
+            </linearGradient>
+            <linearGradient id="spot" x1="0.5" y1="0" x2="0.5" y2="1">
+              <stop offset="0%" stop-color="#f4e8cf" stop-opacity=".55"/>
+              <stop offset="100%" stop-color="#f4e8cf" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="figGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#d9c7a3"/>
+              <stop offset="100%" stop-color="#8f7a55"/>
+            </linearGradient>
+            <radialGradient id="glow" cx="0.5" cy="0.32" r="0.6">
+              <stop offset="0%" stop-color="#c9a24a" stop-opacity=".34"/>
+              <stop offset="100%" stop-color="#c9a24a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="560" height="400" fill="url(#bgGrad)"/>
+          <rect width="560" height="400" fill="url(#glow)"/>
+          <path d="M280 40 L440 400 L120 400 Z" fill="url(#spot)"/>
+          <g opacity=".55">
+            <rect x="40" y="70" width="6" height="330" fill="#3a342c"/>
+            <rect x="514" y="70" width="6" height="330" fill="#3a342c"/>
+            <rect x="40" y="70" width="480" height="6" fill="#3a342c"/>
+            <rect x="40" y="196" width="480" height="4" fill="#2f2a24"/>
+            <rect x="40" y="328" width="480" height="10" fill="#2b2621"/>
+          </g>
+          <g opacity=".8">
+            <ellipse cx="280" cy="342" rx="90" ry="14" fill="#000" opacity=".45"/>
+          </g>
+          <g>
+            <circle cx="280" cy="150" r="26" fill="url(#figGrad)"/>
+            <path d="M254 178 Q280 166 306 178 L318 262 Q280 276 242 262 Z" fill="url(#figGrad)" opacity=".92"/>
+            <path d="M258 182 L222 254" stroke="url(#figGrad)" stroke-width="15" stroke-linecap="round"/>
+            <path d="M302 182 L338 246" stroke="url(#figGrad)" stroke-width="15" stroke-linecap="round"/>
+            <path d="M262 264 L252 338" stroke="url(#figGrad)" stroke-width="18" stroke-linecap="round"/>
+            <path d="M298 264 L310 338" stroke="url(#figGrad)" stroke-width="18" stroke-linecap="round"/>
+          </g>
+          <g stroke="#f4e8cf" stroke-opacity=".3" stroke-width="1.4" fill="none">
+            <circle cx="280" cy="150" r="44"/>
+            <circle cx="280" cy="150" r="62" stroke-opacity=".16"/>
+          </g>
+          <g fill="#c9a24a" opacity=".65">
+            <circle cx="96" cy="110" r="2.5"/>
+            <circle cx="464" cy="96" r="2"/>
+            <circle cx="428" cy="300" r="2.5"/>
+            <circle cx="132" cy="296" r="2"/>
+            <circle cx="500" cy="200" r="1.8"/>
+            <circle cx="58" cy="220" r="1.8"/>
+          </g>
+          <text x="280" y="378" text-anchor="middle" fill="#8f8468" font-size="11" letter-spacing="5" font-family="PingFang SC,sans-serif">REHEARSAL · TAKE 01</text>
+        </svg>
+        <div class="play" aria-label="播放预告">
+          <div class="play-btn">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="float-card fc1">
+        <div class="fc-num">1,280+</div>
+        <div class="fc-txt">场校园记录</div>
+      </div>
+      <div class="float-card fc2">
+        <div class="fc-num">96%</div>
+        <div class="fc-txt">参与续约率</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ticker -->
+<div class="ticker">
+  <div class="ticker-track" id="ticker">
+    <span>本色表达</span><span>校园艺术实践</span><span>真实影像计划</span><span>成长纪录片</span>
+    <span>排练厅观察</span><span>青春叙事</span><span>身体与自我</span><span>镜头下的少年</span>
+    <span>本色表达</span><span>校园艺术实践</span><span>真实影像计划</span><span>成长纪录片</span>
+    <span>排练厅观察</span><span>青春叙事</span><span>身体与自我</span><span>镜头下的少年</span>
+  </div>
+</div>
+
+<!-- about -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-art reveal">
+        <svg viewBox="0 0 480 520" role="img" aria-label="排练厅内的镜面与椅子">
+          <defs>
+            <linearGradient id="ab1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e8dcc8"/>
+              <stop offset="100%" stop-color="#cbb99a"/>
+            </linearGradient>
+            <linearGradient id="ab2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2a2622"/>
+              <stop offset="100%" stop-color="#423b32"/>
+            </linearGradient>
+          </defs>
+          <rect width="480" height="520" fill="url(#ab1)"/>
+          <rect x="0" y="0" width="480" height="290" fill="url(#ab2)"/>
+          <g opacity=".35" stroke="#e8dcc8" stroke-width="1">
+            <line x1="80" y1="0" x2="80" y2="290"/>
+            <line x1="200" y1="0" x2="200" y2="290"/>
+            <line x1="320" y1="0" x2="320" y2="290"/>
+            <line x1="440" y1="0" x2="440" y2="290"/>
+            <line x1="0" y1="100" x2="480" y2="100"/>
+            <line x1="0" y1="200" x2="480" y2="200"/>
+          </g>
+          <g>
+            <circle cx="240" cy="176" r="30" fill="#d9c7a3"/>
+            <path d="M206 212 Q240 198 274 212 L288 300 Q240 316 192 300 Z" fill="#d9c7a3" opacity=".95"/>
+            <path d="M212 216 L176 286" stroke="#d9c7a3" stroke-width="16" stroke-linecap="round"/>
+            <path d="M268 216 L306 278" stroke="#d9c7a3" stroke-width="16" stroke-linecap="round"/>
+          </g>
+          <g>
+            <rect x="0" y="290" width="480" height="230" fill="#efe6d4"/>
+            <ellipse cx="240" cy="470" rx="150" ry="26" fill="#cbb99a" opacity=".55"/>
+            <path d="M120 360 L360 360 L340 380 L140 380 Z" fill="#b9a581"/>
+            <path d="M140 380 L140 470 M340 380 L340 470" stroke="#a8916b" stroke-width="10" stroke-linecap="round"/>
+            <path d="M120 360 L360 360" stroke="#a8916b" stroke-width="8"/>
+          </g>
+          <g fill="#c8452b" opacity=".5">
+            <circle cx="70" cy="430" r="4"/>
+            <circle cx="410" cy="440" r="3"/>
+            <circle cx="380" cy="330" r="3"/>
+          </g>
+        </svg>
+      </div>
+      <div class="about-copy reveal">
+        <div class="sec-label">关于本色影像</div>
+        <h2 class="sec-title">让每一次<br>真实表达都被看见</h2>
+        <p>
+          本色影像成立于校园艺术实践的土壤之上。我们相信，当“<strong>学校要求光着表演</strong>”这样的表述出现时，
+          它指向的并非噱头，而是一次关于自我、身体与勇气的公共讨论。
+          我们以此为起点，用纪录片式的镜头语言，把排练厅里的犹豫、后台的深呼吸、走上台前的三秒钟，全部留下来。
+        </p>
+        <p>
+          我们与学校、艺术教师、学生社团、独立剧场保持长期合作，
+          提供从前期策划、现场跟拍到成片交付的一体化影像服务。
+          品牌成立至今，足迹覆盖数十所院校，累计记录演出与排练超过千场，
+          让<strong>本色表达</strong>成为可以被回看的成长样本。
+        </p>
+        <p>
+          我们不做评判者，只做观察者与陪伴者。镜头保持克制，光线保持诚实，
+          把选择权交还给镜头前的人。
+        </p>
+        <div class="about-stats">
+          <div class="stat"><b>1,280<i>+</i></b><small>场校园记录</small></div>
+          <div class="stat"><b>64<i>所</i></b><small>合作院校</small></div>
+          <div class="stat"><b>8<i>年</i></b><small>持续拍摄</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- values -->
+<section class="values" id="values">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-label">品牌理念</div>
+      <h2 class="sec-title">克制的镜头，<br>诚实的表达</h2>
+      <p class="sec-desc">
+        面对敏感而真诚的题材，我们坚持三条不动摇的原则。
+        它们不是为了好看，而是为了让镜头前的人始终感到安全与被尊重。
+      </p>
+    </div>
+    <div class="val-grid">
+      <div class="val-card reveal">
+        <span class="val-idx">01 / 尊重</span>
+        <div class="val-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-9.5A4.5 4.5 0 0 1 12 8a4.5 4.5 0 0 1 7 3.5C19 16.5 12 21 12 21z" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>参与者的选择优先</h3>
+        <p>任何一帧画面能否保留，最终由镜头前的人决定。我们提供充分告知、随时叫停与成片复核机制，让表达建立在自愿与安心之上。</p>
+      </div>
+      <div class="val-card reveal">
+        <span class="val-idx">02 / 诚实</span>
+        <div class="val-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>不修饰，不夸张</h3>
+        <p>自然光、现场声、真实的呼吸与停顿。我们拒绝滤镜化的青春叙事，也拒绝把真诚的勇气加工成猎奇素材。</p>
+      </div>
+      <div class="val-card reveal">
+        <span class="val-idx">03 / 成长</span>
+        <div class="val-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 20c3-8 6-12 8-12s5 4 8 12" stroke-linecap="round"/><path d="M12 8V4" stroke-linecap="round"/></svg>
+        </div>
+        <h3>记录是为了回看</h3>
+        <p>影像的终点不是发布，而是多年以后仍能被重新打开。我们把每一次排练与登台，整理成可检索的成长档案。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- works -->
+<section class="works" id="works">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-label">作品选集</div>
+      <h2 class="sec-title">镜头里的排练厅</h2>
+      <p class="sec-desc">从课堂到舞台，从犹豫到笃定。以下为近年校园艺术实践影像的部分片段。</p>
+    </div>
+    <div class="filter-row">
+      <button class="chip on" data-filter="all">全部</button>
+      <button class="chip" data-filter="doc">纪录长片</button>
+      <button class="chip" data-filter="short">短影像</button>
+      <button class="chip" data-filter="back">幕后花絮</button>
+    </div>
+    <div class="works-grid" id="worksGrid">
+
+      <article class="work" data-cat="doc">
+        <div class="work-thumb">
+          <svg viewBox="0 0 360 220" role="img" aria-label="排练厅的晨光">
+            <defs><linearGradient id="w1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b2723"/><stop offset="1" stop-color="#4a4034"/></linearGradient></defs>
+            <rect width="360" height="220" fill="url(#w1)"/>
+            <path d="M180 0 L300 220 L60 220 Z" fill="#f4e8cf" opacity=".16"/>
+            <circle cx="180" cy="96" r="22" fill="#c9a24a" opacity=".8"/>
+            <path d="M158 118 Q180 108 202 118 L212 176 Q180 188 148 176 Z" fill="#c9a24a" opacity=".6"/>
+            <g stroke="#e8dcc8" stroke-opacity=".22"><line x1="40" y1="0" x2="40" y2="220"/><line x1="320" y1="0" x2="320" y2="220"/></g>
+          </svg>
+          <span class="work-dur">28:14</span>
+        </div>
+        <div class="work-body">
+          <div class="work-meta">纪录长片 · 2024</div>
+          <h3>《卸下校服之前》</h3>
+          <p>一部跟随某中学戏剧社三个月的长篇纪录，记录他们围绕“本色表达”展开的排练、争执与和解。</p>
+          <div class="work-foot"><span>校园 · 成长</span><span class="ar">→</span></div>
+        </div>
+      </article>
+
+      <article class="work" data-cat="short">
+        <div class="work-thumb">
+          <svg viewBox="0 0 360 220" role="img" aria-label="单色舞台">
+            <defs><linearGradient id="w2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d1b18"/><stop offset="1" stop-color="#38312a"/></linearGradient></defs>
+            <rect width="360" height="220" fill="url(#w2)"/>
+            <rect x="70" y="40" width="220" height="120" fill="none" stroke="#c9a24a" stroke-opacity=".5" stroke-width="1.5"/>
+            <circle cx="180" cy="100" r="26" fill="#d9c7a3" opacity=".85"/>
+            <path d="M154 128 Q180 116 206 128 L216 180 Q180 192 144 180 Z" fill="#d9c7a3" opacity=".7"/>
+            <text x="180" y="205" text-anchor="middle" fill="#8f8468" font-size="9" letter-spacing="4" font-family="PingFang SC,sans-serif">TAKE 07</text>
+          </svg>
+          <span class="work-dur">06:42</span>
+        </div>
+        <div class="work-body">
+          <div class="work-meta">短影像 · 2024</div>
+          <h3>《三秒钟的深呼吸》</h3>
+          <p>后台固定机位，记录一位少年在上台前最后三秒的呼吸。没有旁白，只有现场的安静。</p>
+          <div class="work-foot"><span>后台 · 静默</span><span class="ar">→</span></div>
+        </div>
+      </article>
+
+      <article class="work" data-cat="back">
+        <div class="work-thumb">
+          <svg viewBox="0 0 360 220" role="img" aria-label="排练厅把杆">
+            <defs><linearGradient id="w3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8dcc8"/><stop offset="1" stop-color="#c2b092"/></linearGradient></defs>
+            <rect width="360" height="220" fill="url(#w3)"/>
+            <rect x="0" y="0" width="360" height="70" fill="#2a2622" opacity=".85"/>
+            <rect x="40" y="110" width="280" height="7" fill="#8f7a55"/>
+            <rect x="60" y="117" width="8" height="80" fill="#8f7a55"/>
+            <rect x="292" y="117" width="8" height="80" fill="#8f7a55"/>
+            <circle cx="180" cy="88" r="18" fill="#b9a581"/>
+            <path d="M162 106 Q180 98 198 106 L206 150 Q180 160 154 150 Z" fill="#b9a581"/>
+            <circle cx="90" cy="60" r="3" fill="#c8452b" opacity=".7"/>
+          </svg>
+          <span class="work-dur">04:08</span>
+        </div>
+        <div class="work-body">
+          <div class="work-meta">幕后花絮 · 2023</div>
+          <h3>《把杆边的第七次重来》</h3>
+          <p>动作总不到位，老师喊了第七次重来。镜头没有剪掉失败的部分，因为那也是表演的一部分。</p>
+          <div class="work-foot"><span>排练 · 坚持</span><span class="ar">→</span></div>
+        </div>
+      </article>
+
+      <article class="work" data-cat="doc">
+        <div class="work-thumb">
+          <svg viewBox="0 0 360 220" role="img" aria-label="舞台轮廓">
+            <defs><linearGradient id="w4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151312"/><stop offset="1" stop-color="#2f2a24"/></linearGradient></defs>
+            <rect width="360" height="220" fill="url(#w4)"/>
+            <path d="M60 0 Q180 120 300 0" fill="none" stroke="#c9a24a" stroke-opacity=".4" stroke-width="1.5"/>
+            <g fill="#d9c7a3" opacity=".6">
+              <circle cx="120" cy="130" r="13"/><path d="M107 145 Q120 139 133 145 L139 190 Q120 198 101 190 Z"/>
+              <circle cx="180" cy="122" r="14"/><path d="M166 138 Q180 131 194 138 L201 190 Q180 200 159 190 Z"/>
+              <circle cx="240" cy="130" r="13"/><path d="M227 145 Q240 139 253 145 L259 190 Q240 198 221 190 Z"/>
+            </g>
+          </svg>
+          <span class="work-dur">41:30</span>
+        </div>
+        <div class="work-body">
+          <div class="work-meta">纪录长片 · 2023</div>
+          <h3>《站成一排》</h3>
+          <p>一次集体作品的完整诞生过程：从名单确定到最终谢幕，记录每个人如何在集体里保留自己。</p>
+          <div class="work-foot"><span>集体 · 自我</span><span class="ar">→</span></div>
+        </div>
+      </article>
+
+      <article class="work" data-cat="short">
+        <div class="work-thumb">
+          <svg viewBox="0 0 360 220" role="img" aria-label="镜面倒影">
+            <defs><linearGradient id="w5" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#efe6d4"/><stop offset="1" stop-color="#d0c0a3"/></linearGradient></defs>
+            <rect width="360" height="220" fill="url(#w5)"/>
+            <line x1="180" y1="0" x2="180" y2="220" stroke="#a8916b" stroke-opacity=".5" stroke-width="1"/>
+            <g opacity=".85">
+              <circle cx="110" cy="90" r="20" fill="#8f7a55"/>
+              <path d="M90 112 Q110 103 130 112 L138 168 Q110 178 82 168 Z" fill="#8f7a55"/>
+            </g>
+            <g opacity=".35">
+              <circle cx="250" cy="90" r="20" fill="#8f7a55"/>
+              <path d="M230 112 Q250 103 270 112 L278 168 Q250 178 222 168 Z" fill="#8f7a55"/>
+            </g>
+          </svg>
+          <span class="work-dur">03:55</span>
+        </div>
+        <div class="work-body">
+          <div class="work-meta">短影像 · 2023</div>
+          <h3>《镜子里的那个人》</h3>
+          <p>排练厅的整面镜子，是学生最熟悉的观众。短片用镜面构图，讲述一个人与自己的对视。</p>
+          <div class="work-foot"><span>自我 · 对视</span><span class="ar">→</span></div>
+        </div>
+      </article>
+
+      <article class="work" data-cat="back">
+        <div class="work-thumb">
+          <svg viewBox="0 0 360 220" role="img" aria-label="灯光与线缆">
+            <defs><linearGradient id="w6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#221f1c"/><stop offset="1" stop-color="#141312"/></linearGradient></defs>
+            <rect width="360" height="220" fill="url(#w6)"/>
+            <rect x="150" y="30" width="60" height="26" rx="6" fill="#3a342c"/>
+            <circle cx="180" cy="43" r="8" fill="#c9a24a"/>
+            <path d="M180 56 L120 220 M180 56 L240 220" stroke="#c9a24a" stroke-opacity=".22" stroke-width="2"/>
+            <path d="M40 200 Q120 160 180 200 T320 200" stroke="#5a5248" stroke-width="2" fill="none"/>
+            <circle cx="180" cy="140" r="18" fill="#d9c7a3" opacity=".8"/>
+          </svg>
+          <span class="work-dur">05:20</span>
+        </div>
+        <div class="work-body">
+          <div class="work-meta">幕后花絮 · 2022</div>
+          <h3>《一束光是怎么亮的》</h3>
+          <p>把镜头对准舞台之外：灯光师、场务、学生志愿者。一场演出从来不只是台上的几十个人。</p>
+          <div class="work-foot"><span>幕后 · 协作</span><span class="ar">→</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- quote strip -->
+<div class="quote-strip">
+  <div class="wrap quote-in reveal">
+    <div class="quote-mark">“</div>
+    <div>
+      <div class="quote-txt">当学校要求光着表演，我们更该问的是：孩子们是否感到安全、被尊重，以及，他们是否真的愿意。</div>
+      <div class="quote-by">—— 本色影像 · 创作守则第一条</div>
+    </div>
+  </div>
+</div>
+
+<!-- process -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-label">合作流程</div>
+      <h2 class="sec-title">从一次沟通，<br>到一部成片</h2>
+      <p class="sec-desc">四步清晰的可控流程，把敏感题材的处理权交还给参与者与校方。</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc-item reveal">
+        <div class="proc-num">STEP 01</div>
+        <h3>需求沟通</h3>
+        <p>与校方、指导教师、学生代表三方对接，明确主题边界、拍摄范围与发布渠道。</p>
+      </div>
+      <div class="proc-item reveal">
+        <div class="proc-num">STEP 02</div>
+        <h3>知情与授权</h3>
+        <p>逐份签署知情同意书，未成年参与者须取得监护人书面同意，并设置随时撤回通道。</p>
+      </div>
+      <div class="proc-item reveal">
+        <div class="proc-num">STEP 03</div>
+        <h3>现场跟拍</h3>
+        <p>小团队、轻设备、低干扰。尊重排练节奏，不摆拍、不干预、不制造冲突。</p>
+      </div>
+      <div class="proc-item reveal">
+        <div class="proc-num">STEP 04</div>
+        <h3>成片复核</h3>
+        <p>粗剪版本交参与者与校方共同复核，逐帧确认，通过后方可进入发布与归档流程。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- voices -->
+<section class="voices" id="voices">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-label">合作者说</div>
+      <h2 class="sec-title">来自排练厅的声音</h2>
+      <p class="sec-desc">他们是我们合作过的老师、学生与戏剧工作者。</p>
+    </div>
+    <div class="voice-grid">
+      <div class="voice reveal">
+        <div class="voice-rate">★★★★★</div>
+        <p>“题材本身有争议，但他们的处理方式让我们很安心。每一步都先问学生的意见，成片也逐帧复核。这种专业度在校园影像合作里不多见。”</p>
+        <div class="voice-who">
+          <div class="avatar" style="background:#c8452b">林</div>
+          <div><b>林老师</b><small>中学戏剧社指导</small></div>
+        </div>
+      </div>
+      <div class="voice reveal">
+        <div class="voice-rate">★★★★★</div>
+        <p>“一开始我很抗拒镜头，后来发现他们真的不逼人。片子出来之后，我第一次觉得那个在台上紧张到发抖的自己，也挺好的。”</p>
+        <div class="voice-who">
+          <div class="avatar" style="background:#2b6c8c">陈</div>
+          <div><b>陈同学</b><small>高二 · 参与者</small></div>
+        </div>
+      </div>
+      <div class="voice reveal">
+        <div class="voice-rate">★★★★★</div>
+        <p>“作为独立剧场，我们见过太多把身体议题拍成猎奇的团队。他们是少数愿意先谈伦理、再谈画面的合作方，沟通起来很省心。”</p>
+        <div class="voice-who">
+          <div class="avatar" style="background:#8f7a55">周</div>
+          <div><b>周导演</b><small>独立剧场创作人</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- faq -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+      <div class="sec-label" style="justify-content:center">常见问题</div>
+      <h2 class="sec-title">你可能想先了解这些</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">关于"学校要求光着表演"这类题材，你们如何把握尺度？<span class="faq-ico"></span></button>
+        <div class="faq-a"><p>我们把它视为一个关于艺术表达与身体自主的公共议题，而非猎奇素材。所有拍摄以参与者自愿为前提，涉及未成年人必须取得监护人书面同意，并设置随时叫停机制。成片发布前逐帧复核，任何一方有异议即删除相关内容。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">拍摄周期通常需要多久？<span class="faq-ico"></span></button>
+        <div class="faq-a"><p>短影像一般 3–7 个工作日完成现场拍摄，粗剪 5 个工作日；纪录长片依项目规模，通常需要 1–3 个月的跟拍周期，再加 2–3 周后期。具体排期会在需求沟通阶段给出书面时间表。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">学生可以中途退出吗？<span class="faq-ico"></span></button>
+        <div class="faq-a"><p>可以，且不需要说明理由。我们提供全程可撤回机制，撤回后相关素材会在一周内从项目库中彻底删除，已发布内容同步下架。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">成片的版权归属于谁？<span class="faq-ico"></span></button>
+        <div class="faq-a"><p>原始素材与成片的著作权归参与方与本色影像共有。校方可用于教学与非商业展示，我们仅在学校书面许可后用于品牌案例展示。任何商业用途须另行签约。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">如果学校希望保留控制权，可以吗？<span class="faq-ico"></span></button>
+        <div class="faq-a"><p>当然可以。我们提供"校方终审"模式，所有粗剪、调色、字幕版本均先交校方与参与者代表复核，未获书面通过不进下一环节。控制权始终在内容相关方手中。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">你们的设备与团队规模如何？<span class="faq-ico"></span></button>
+        <div class="faq-a"><p>常规项目为 3–5 人小组，采用轻量化电影机与无声跟拍设备，尽量避免打扰排练节奏。灯光以现场光为主，必要时使用低瓦数补光，不做强造型处理。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- cta -->
+<section class="cta" id="cta">
+  <div class="wrap cta-in reveal">
+    <h2>让下一段真实，<br>被认真记录</h2>
+    <p>留下联系方式，我们会在一个工作日内与你沟通主题、周期与授权细节。<br>先谈尊重，再谈镜头。</p>
+    <form class="cta-form" id="ctaForm">
+      <input type="email" id="emailInput" placeholder="请输入邮箱地址" required>
+      <button type="submit">预约沟通</button>
+    </form>
+    <div class="cta-msg" id="ctaMsg">已收到，我们会在一个工作日内联系你。</div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="logo-txt">本色影像 TRUE FORM FILM</span>
+        <p>专注校园艺术实践与真实表达的影像品牌。镜头克制，光线诚实，把选择权交还给镜头前的人。</p>
+      </div>
+      <div class="foot-col">
+        <h4>栏目</h4>
+        <a href="#about">关于品牌</a>
+        <a href="#values">品牌理念</a>
+        <a href="#works">作品选集</a>
+        <a href="#process">合作流程</a>
+      </div>
+      <div class="foot-col">
+        <h4>资源</h4>
+        <a href="#faq">常见问题</a>
+        <a href="#voices">合作者说</a>
+        <a href="#cta">预约沟通</a>
+        <a href="#works">幕后花絮</a>
+      </div>
+      <div class="foot-col">
+        <h4>联系</h4>
+        <a href="#cta">hello@trueform.film</a>
+        <a href="#cta">合作咨询</a>
+        <a href="#cta">媒体联络</a>
+        <a href="#cta">加入我们</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 本色影像 TRUE FORM FILM · 保留所有权利</span>
+      <div class="socials">
+        <span>微</span><span>博</span><span>B</span><span>抖</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* sticky topbar hide on scroll down */
+  var topbar=document.getElementById('topbar');
+  var lastY=0;
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    if(y>120 && y>lastY){topbar.classList.add('hide');}
+    else{topbar.classList.remove('hide');}
+    lastY=y;
+  },{passive:true});
+
+  /* burger nav */
+  var burger=document.getElementById('burger');
+  var nav=document.getElementById('nav');
+  burger.addEventListener('click',function(){
+    nav.classList.toggle('open');
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){nav.classList.remove('open');});
+  });
+
+  /* works filter */
+  var chips=document.querySelectorAll('.chip');
+  var works=document.querySelectorAll('.work');
+  chips.forEach(function(chip){
+    chip.addEventListener('click',function(){
+      chips.forEach(function(c){c.classList.remove('on');});
+      chip.classList.add('on');
+      var f=chip.getAttribute('data-filter');
+      works.forEach(function(w){
+        var show=(f==='all'||w.getAttribute('data-cat')===f);
+        w.style.display=show?'flex':'none';
+      });
+    });
+  });
+
+  /* faq accordion */
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q=item.querySelector('.faq-q');
+    var a=item.querySelector('.faq-a');
+    q.addEventListener('click',function(){
+      var isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(o){
+        o.classList.remove('open');
+        o.querySelector('.faq-a').style.maxHeight=null;
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        a.style.maxHeight=a.scrollHeight+'px';
+      }
+    });
+  });
+
+  /* reveal on scroll */
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+  /* cta form */
+  var form=document.getElementById('ctaForm');
+  var msg=document.getElementById('ctaMsg');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=document.getElementById('emailInput').value.trim();
+    if(!email||email.indexOf('@')<0){return;}
+    msg.classList.add('show');
+    form.reset();
+    setTimeout(function(){msg.classList.remove('show');},4200);
+  });
+
+  /* smooth anchor with offset */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href');
+      if(id.length<2)return;
+      var target=document.querySelector(id);
+      if(!target)return;
+      e.preventDefault();
+      var top=target.getBoundingClientRect().top+window.scrollY-80;
+      window.scrollTo({top:top,behavior:'smooth'});
+    });
+  });
+
+  /* hero play button subtle feedback */
+  var playBtn=document.querySelector('.play');
+  if(playBtn){
+    playBtn.addEventListener('click',function(){
+      playBtn.style.transform='scale(0.96)';
+      setTimeout(function(){playBtn.style.transform='';},160);
+    });
+  }
+})();
+</script>
+</body>
+            </html>
